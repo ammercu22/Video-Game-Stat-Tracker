@@ -1,0 +1,117 @@
+*{
+  margin:0px;
+  padding: 0px;
+  font-family: 'Cairo', sans-serif;
+  letter-spacing: 3px;
+}
+body{
+  height:100%;
+  overflow: hidden;
+  background-color: #953036;
+  color:white;
+}
+
+.logo{
+  display:flex;
+  flex-direction: column;
+  position: absolute;
+  top: 15%;
+  left: 25%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+.body-bg-no-image {
+  background: var(#953036);
+}
+.body-bg-image {
+  background: url("./assets/octane.png") no-repeat top
+    center;
+  background-color: #953036;
+}
+/*search-container components*/
+.search-container{
+  width: 50%;
+  height: 40%;
+  display:flex;
+  background: rgb(0,0,0,0.65);
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.search-container .header h1{
+  padding: 10px;
+}
+label {
+  padding-bottom: 10px;
+}
+
+.platform{
+  padding: 10px;
+}
+.platform .select-platform{
+  width: 100%;
+  padding: 5px;
+  font-size: 15px;
+}
+.gamertag{
+  padding: 10px;
+}
+
+.gamertag input{
+  width: 98%;
+  padding: 5px;
+  font-size: 15px;
+}
+.submit-button{
+  padding-left: 10px;
+  padding-top: 15px;
+}
+.submit-button input{
+  width: 98.5%;
+  padding: 5px;
+  font-size: 15px;
+  background-color:#953036;
+  color:white
+}
+/*End of search-container components*/
+
+
+/*player profile components*/
+.player-profile{
+  width: 50%;
+  height: 40%;
+  display:flex;
+  background: rgb(0,0,0,0.65);
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+.player-profile .header{
+  display: flex;
+}
+.player-profile-img{
+  width: 100px;
+  height: 100px;
+  border-radius:100%;
+  position: relative;
+  overflow:hidden;
+  display: inline-box;
+}
+.player-profile-img img{
+  width:100%;
+  height:100%;
+  position: absolute;
+  top:0;
+  left:0;
+}
+
+.legend-stat-container{
+  display: flex;
+}

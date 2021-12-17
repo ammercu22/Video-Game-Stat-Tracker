@@ -1,0 +1,33 @@
+{
+  "name": "video-game-stat-tracker",
+  "version": "1.0.0",
+  "description": "Track stats for Apex Legends",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "server": "nodemon server",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ammercu22/Video-Game-Stat-Tracker.git"
+  },
+  "author": "ammercu22",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ammercu22/Video-Game-Stat-Tracker/issues"
+  },
+  "homepage": "https://github.com/ammercu22/Video-Game-Stat-Tracker#readme",
+  "dependencies": {
+    "concurrently": "^6.4.0",
+    "cross-fetch": "^3.1.4",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "node-fetch": "^3.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
