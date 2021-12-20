@@ -29,7 +29,7 @@ function Form({pcPlatform, platforms}) {
             </div>
             <div className="gamertag">
                 <label htmlFor="gamertag">Gamertag</label>
-                <input value = {gamertag} onChange={onChangeGamertag} type='text' id='gamertag' className='select-gamertag' placeholder={platforms}></input>
+                <input value = {gamertag} onChange={onChangeGamertag} type='text' id='gamertag' className='select-gamertag' placeholder={platforms} required></input>
             </div>
             <Button/>
         </form>

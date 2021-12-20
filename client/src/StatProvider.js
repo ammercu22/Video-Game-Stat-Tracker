@@ -20,11 +20,16 @@ class StatProvider extends React.Component {
         }
     }
 
+    resetState = () =>{
+        this.setState({loading: true, error: false, profileData: null, errorRes: null,});
+    }
+    
     render(){
         return (
             <StatContext.Provider value={{
                 state: this.state,
-                getStats: this.getStats
+                getStats: this.getStats,
+                resetState: this.resetState
             }}>
                 {this.props.children}
             </StatContext.Provider>

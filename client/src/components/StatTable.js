@@ -1,30 +1,31 @@
 import React from 'react'
 
-function StatTable({legend, stats}) {
+function StatTable({overview, stats, activeLegend}) {
    let i = 0;
    let legendStats = Object.entries(stats).map(([key, value]) => {
-       //console.log(value.displayName + ": " + value.displayValue)
-       i += 1; 
-       return (
-            <div key={i}>
-               <h5 style ={{color: 'white'}}>{value.displayName}</h5>
-               <h6 style ={{color: 'white'}}>{value.displayValue}</h6>
+       i += 1;
+       if (i <=4){
+        return (
+            <div key={i} className='stat'>
+               <p className = 'stat-name' >{value.displayName}</p>
+               <p className = 'stat-value'>{value.displayValue}</p>
             </div>
         )
-        
+       }
     }
-   );
+    );
+   
 
-    return (
-        <div className="legend-stat-container">
-            <div className='legend-img'>
-                <h2 style ={{color: 'white'}} > {legend.metadata.name} </h2>
-                <img width = '200px' src={legend.metadata.imageUrl} alt=""/>
-            </div>
+    return (      
             <div className='legend-stats'>
+                <div>
+                    <div className = 'stat'>
+                        <p className = 'stat-name'>Selected Legend</p>
+                        <p className = 'stat-value'>{activeLegend.metadata.name}</p>
+                    </div>
+                </div>
                 {legendStats} 
             </div>  
-        </div>
        
     )
 }
