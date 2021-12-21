@@ -14,7 +14,6 @@ class StatProvider extends React.Component {
         try{
             const response = await axios.get(`/api/v1/profile/${platform}/${gamertag}`);
             this.setState({loading: false, profileData: response.data.data})
-            console.log()
         } catch(err){
             this.setState({loading: false, errorRes: err.response.data.message, error: true})
         }

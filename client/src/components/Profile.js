@@ -16,9 +16,9 @@ function Profile() {
     React.useEffect(() => {
         context.getStats(platform, gamertag)
     }, [])
+
     const onClick = () => {
         context.resetState()
-        //console.log(context.state);
         navigate(`/`);
     }
     if(context.state.loading === true){

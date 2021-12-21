@@ -3,8 +3,6 @@ const router = express.Router();
 const fetch = require('cross-fetch');
 
 router.get('/:platform/:gamertag', async (req, res) => {
-    //console.log(req.params.platform, req.params.gamertag);
-    //res.send('Hello');
     try{
         const headers = {
             'TRN-Api-Key': process.env.TRACKER_API_KEY
