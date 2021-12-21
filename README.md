@@ -4,7 +4,7 @@ An web application that track a player's stats in the video game 'Apex Legends'.
 Inspiration: [Apex Legends Tracker App | Full Stack Node & Vue.js](https://www.youtube.com/watch?v=8z2qRln9tnc)
 
 ## Running Application
-In the root folder, run **npm run dev** to start the app in development mode. Make sure to add your own API key to the config.env file
+In the root folder, run **'npm run dev'** to start the app in development mode. Make sure to add your own API key to the config.env file
 
 ## Frameworks/Dependencies Used
 - React
