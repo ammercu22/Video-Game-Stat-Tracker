@@ -16,6 +16,14 @@ if(process.env.NODE_ENV === 'development'){
 app.use('/api/v1/profile', require('./routes/profile'));
 const port = process.env.PORT || 8000;
 
+//Handle Production
+if(process.env.NODE_ENV==='production'){
+    //Set static folder
+    app.use(express.static(__dirname + '/build/'));
+
+    //Handle SPA
+    app.get(/.*/, (req,res) => res.sendFile(__dirname + '/build/index.html'));
+}
 app.listen(port, () => {
     console.log(`Server running in ${process.env.NODE_ENV} mode on port ${port}`)
 });
