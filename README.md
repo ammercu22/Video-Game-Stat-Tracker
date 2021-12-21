@@ -4,6 +4,11 @@ For the backend, I created an API that recieves GET requests for specified playe
 player's stats using the Tracker Network API (https://tracker.gg/developers). This JSON response was then parsed and displayed 
 on the front-end.
 
+Inspiration: [Apex Legends Tracker App | Full Stack Node & Vue.js](https://www.youtube.com/watch?v=8z2qRln9tnc)
+
+## Running Application
+In the root folder, run **npm run dev** to start the app in development mode. Make sure to add your own API key to the config.env file
+
 # Frameworks/Dependencies Used
 - React
 - Express/Node.js
@@ -13,5 +18,6 @@ on the front-end.
 - React Icons
 
 # Screenshots
-
-
+<img src='/images/apex_legends_2.gif' />
+<img src='/images/homepage.png' />
+<img src='/images/profile.png' />
