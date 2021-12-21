@@ -1,5 +1,2 @@
 node_modules/
 config.env
-client/node_modules
-client/README.md
-client/src/reportWebVitals.js
