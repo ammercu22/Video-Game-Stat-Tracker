@@ -31,7 +31,7 @@ body{
 /*search-container components*/
 .search-container{
   width: 50%;
-  height: 40%;
+  height: 45%;
   display:flex;
   background: rgb(0,0,0,0.65);
   flex-direction: column;
