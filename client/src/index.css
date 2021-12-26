@@ -197,7 +197,7 @@ form p{
   opacity:0.8;
 }
 @media (max-width: 1500px) {
-  .legend-img {
+  .legend-img  {
     z-index: 0;
   }
 }
