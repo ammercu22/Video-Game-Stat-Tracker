@@ -26,10 +26,12 @@ function Form({pcPlatform, platforms}) {
                     <option value='psn'>Playstation</option>
                     <option value='xbl'>XBox</option>
                 </select>
+                <p>Example: Playstation</p>
             </div>
             <div className="gamertag">
                 <label htmlFor="gamertag">Gamertag</label>
                 <input value = {gamertag} onChange={onChangeGamertag} type='text' id='gamertag' className='select-gamertag' placeholder={platforms} required></input>
+                <p>Example: ShamR0cks978</p>
             </div>
             <Button/>
         </form>
